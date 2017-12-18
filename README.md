@@ -11,7 +11,7 @@ Launch cmd and run this command:
 reg add "HKCU\Software\Microsoft\Command Processor" /v AutoRun ^ /t REG_EXPAND_SZ /d "%"USERPROFILE"%\init.cmd" /f
 ```
 
-**Copy paste the file init.cmd in the location** ```%USERPROFILE%\``` which is usually C:\Users\<username>
+**Copy paste the file init.cmd in the location** ```%USERPROFILE%\``` which is usually C:\Users\username
 To navigate to this location, *simply type in %USERPROFILE%\ in the RUN dialogue box (Windows Key + R) and hit enter*.
 
 Or you can also create your own init.cmd file. I simply created a .txt file called init.txt and changed the extension to .cmd
