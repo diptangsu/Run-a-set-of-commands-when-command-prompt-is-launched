@@ -2,7 +2,7 @@
 
 To run a set of commands everytime the command prompt is launched, an init script can be specified in the AutoRun registry value.
 
-### Prerequisites
+## Prerequisites
 You need to have a computer running Windows for this to work.
 
 ## Getting Started
