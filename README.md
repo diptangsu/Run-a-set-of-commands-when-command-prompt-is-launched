@@ -11,10 +11,10 @@ Launch cmd and run this command:
 reg add "HKCU\Software\Microsoft\Command Processor" /v AutoRun ^ /t REG_EXPAND_SZ /d "%"USERPROFILE"%\init.cmd" /f
 ```
 
-**Copy paste the file init.cmd in the location** ```%USERPROFILE%\``` which is usually C:\Users\username.
+**Copy paste the file init.cmd in the location** ```%USERPROFILE%\``` which is usually C:\Users\username.  
 To navigate to this location, *simply type in %USERPROFILE%\ in the RUN dialogue box (Windows Key + R) and hit enter*.
 
-Or you can also create your own init.cmd file. I simply created a .txt file called init.txt and changed the extension to .cmd
+Or you can also create your own init.cmd file. I simply created a .txt file called init.txt and changed the extension to .cmd.  
 Here is what you can write in the file.
 ```
 echo off
@@ -24,7 +24,11 @@ echo off
 ...
 echo on
 ```
-Just type in all the commands which you want to execute everytime the command prompt is launched.
+Just type in all the commands which you want to execute everytime the command prompt is launched.  
+**The characters |, < and > cannot be directly displayed on the screen using echo**  
+```echo |``` does not work.  
+**Place a ^(caret) symbol preceding the characters |, < or > wherever they need to be displayed using echo**  
+```echo ^|``` will display | on the screen.  
 
 ## Undoing Changes
 To remove these changes, delete the registry key by running the following command in cmd:
