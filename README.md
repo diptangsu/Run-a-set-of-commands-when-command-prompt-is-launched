@@ -35,3 +35,6 @@ reg delete "HKCU\Software\Microsoft\Command Processor" /v AutoRun
 ## P.S.
 * I don't know much about what I should be doing so I just used it to print my own name lol.
 * If you want to view my init.cmd file, simply change its extension to .txt and open it using any text editor.
+
+## Here is how my cmd looks when launched
+![Example](https://github.com/diptangsu/Run-a-set-of-commands-when-command-prompt-is-launched/blob/master/Preview.JPG)
